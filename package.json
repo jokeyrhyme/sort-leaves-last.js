@@ -1,0 +1,28 @@
+{
+  "name": "sort-leaves-last",
+  "version": "0.0.0",
+  "description": "Sort an Array of related Objects so that parents always precede their children",
+  "main": "sort-leaves-last.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jokeyrhyme/sort-leaves-last.js.git"
+  },
+  "keywords": [
+    "sort",
+    "tree",
+    "leaves"
+  ],
+  "author": "\"Ron Waldon\" (http://jokeyrhy.me/)",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/jokeyrhyme/sort-leaves-last.js/issues"
+  },
+  "homepage": "https://github.com/jokeyrhyme/sort-leaves-last.js",
+  "devDependencies": {
+    "assertive-chai": "^1.0.0",
+    "mocha": "^1.20.1"
+  }
+}

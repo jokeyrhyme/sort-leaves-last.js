@@ -1,0 +1,32 @@
+{
+  "name": "sort-leaves-last",
+  "version": "0.0.0",
+  "description": "Sort an Array of related Objects so that parents always precede their children",
+  "authors": [
+    "\"Ron Waldon\" (http://jokeyrhy.me/)"
+  ],
+  "main": "sort-leaves-last.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "sort",
+    "tree",
+    "leaves"
+  ],
+  "license": "BSD",
+  "homepage": "https://github.com/jokeyrhyme/sort-leaves-last.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "assertive-chai": "~1.0.0",
+    "mocha": "~1.20.1"
+  }
+}
