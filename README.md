@@ -6,10 +6,9 @@ children
 ```javascript
 /**
  * @param {Object[]} nodes an array of objects that need to be sorted
- * @param {Function} TreeAdapter constructor used to map relations
  * @returns {Object[]}
  */
-return function sortLeavesLast(nodes, TreeAdapter)
+return function sortLeavesLast(nodes)
 ```
 
 The nodes may have 0..n children. For my use case, nodes may also have
@@ -18,3 +17,7 @@ between the sets of parents and children (no grand-father paradox!).
 
 The Array of nodes may includes nodes from multiple distinct graphs.
 
+For these purposes, a Node is an Object with the `parentNodes` and
+`childNodes` properties are Arrays (empty or only containing other
+Nodes). The Array of Nodes passed to `sortLeavesLast` must contain all
+Nodes in the graph.
