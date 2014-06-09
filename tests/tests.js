@@ -3,16 +3,16 @@
   if (typeof require === 'function') {
     global.chai = global.chai || require('assertive-chai');
 
-    global.sortLeavesLast = global.sortLeavesLast || require('../poll-until');
+    global.sortLeavesLast = global.sortLeavesLast || require('../sort-leaves-last');
   }
 }(this));
 
 (function (global) {
   'use strict';
-  var assert, pollUntil;
+  var assert, sortLeavesLast;
   assert = global.chai.assert;
 
-  pollUntil = global.sortLeavesLast;
+  sortLeavesLast = global.sortLeavesLast;
 
   suite('sortLeavesLast', function () {
 
