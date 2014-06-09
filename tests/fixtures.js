@@ -54,6 +54,13 @@
     return false;
   };
 
+  /**
+   * only used for testing
+   */
+  Node.prototype.toString = function () {
+    return this.parentNodes.length + ':' + this.name + ':' + this.childNodes.length;
+  };
+
   // exports
 
   return function generate() {
