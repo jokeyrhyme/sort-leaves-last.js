@@ -58,7 +58,16 @@
    * only used for testing
    */
   Node.prototype.toString = function () {
-    return this.parentNodes.length + ':' + this.name + ':' + this.childNodes.length;
+    var string;
+    string = '';
+    string += this.parentNodes.map(function (node) {
+      return node.name;
+    }).join(',').toLowerCase();
+    string += ':' + this.name + ':';
+    string += this.childNodes.map(function (node) {
+      return node.name;
+    }).join(',').toLowerCase();
+    return string;
   };
 
   // exports

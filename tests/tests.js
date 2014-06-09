@@ -35,7 +35,7 @@
       assert.isFunction(sortLeavesLast);
     });
 
-    while (runs < 50) {
+    while (runs < 100) {
 
       array = fixtures();
       result = sortLeavesLast(array);
@@ -93,6 +93,19 @@
             while (i > 0) {
               i -= 1;
               assert.equal(input[i].name, output[i].name);
+            }
+          });
+
+          test('child nodes are preceded by their parents', function () {
+            var node, childIndex, parentIndex;
+            childIndex = result.length;
+            while (childIndex > 0) {
+              childIndex -= 1;
+              node = result[childIndex];
+              node.parentNodes.forEach(function (parent) {
+                parentIndex = result.indexOf(parent);
+                assert.operator(parentIndex, '<', childIndex);
+              });
             }
           });
 
