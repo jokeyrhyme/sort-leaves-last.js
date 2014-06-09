@@ -4,7 +4,7 @@
   "description": "Sort an Array of related Objects so that parents always precede their children",
   "main": "sort-leaves-last.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --ui tdd tests/*.js"
+    "test": "./node_modules/mocha/bin/mocha --ui tdd tests/tests.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/jokeyrhyme/sort-leaves-last.js",
   "devDependencies": {
+    "array-shuffle": "^0.1.0",
     "assertive-chai": "^1.0.0",
     "mocha": "^1.20.1"
   }

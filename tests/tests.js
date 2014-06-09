@@ -2,6 +2,7 @@
   'use strict';
   if (typeof require === 'function') {
     global.chai = global.chai || require('assertive-chai');
+    global.arrayShuffle = global.arrayShuffle || require('array-shuffle');
 
     global.sortLeavesLast = global.sortLeavesLast || require('../sort-leaves-last');
   }
