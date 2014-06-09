@@ -16,5 +16,23 @@
    * @returns {Object[]}
    */
   return function sortLeavesLast(items, TreeAdapter) {
+    var roots, leaves, middles, i, item, length;
+
+    roots = [];
+    leaves = [];
+    middles = [];
+
+    length = items.length;
+    for (i = 0; i < length; i += 1) {
+      item = items[i];
+      if (!item.parentNode && !item.parentNodes.length) {
+        roots.push(item);
+      } else if (!item.childNodes.length) {
+        leaves.push(item);
+      } else {
+        middles.push(item);
+      }
+    }
+    return roots.concat(middles, leaves);
   };
 }));
