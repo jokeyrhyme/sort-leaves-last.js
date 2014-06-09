@@ -1,6 +1,6 @@
 {
   "name": "sort-leaves-last",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Sort an Array of related Objects so that parents always precede their children",
   "main": "sort-leaves-last.js",
   "scripts": {
